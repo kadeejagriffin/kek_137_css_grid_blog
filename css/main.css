@@ -1,9 +1,11 @@
+/* Universal Selector - remove any margin that the browser 
+has by default*/
+
+
 body{
     background-color: midnightblue;
     color: lightcoral;
 }
-
-
 
 .area-border{
     border: 2px solid white;
@@ -23,6 +25,26 @@ body{
 
 .nav{
     grid-area: nav;
+    background-color: gray;
+    position: sticky;
+    top: 0;
+}
+
+.nav-links{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-links > a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-links > a:hover{
+    font-size: larger;
+    text-decoration: underline;
 }
 
 .prof-pic{
@@ -35,4 +57,5 @@ body{
 
 .posts{
     grid-area: posts;
+    height: 100vh;
 }
