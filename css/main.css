@@ -7,9 +7,9 @@ body{
     color: lightcoral;
 }
 
-.area-border{
+/* .area-border{
     border: 2px solid white;
-}
+} */
 
 .container{
     min-height: 100vh;
@@ -85,4 +85,28 @@ body{
     display: flex;
     width: 100%;
     justify-content: space-around;
+}
+
+.post-card{
+    background-color: lightgray;
+    border: 2px solid lightcoral;
+    border-radius: 25px;
+    padding: 1em;
+    margin-bottom: 3vh;
+}
+
+.card-links{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-links > a {
+    color: lightcoral;
+    text-decoration: none;
+}
+
+.card-links > a:hover {
+    color: midnightblue;
+    text-decoration: none;
+    font-size: larger;
 }
