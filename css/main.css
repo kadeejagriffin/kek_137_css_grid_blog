@@ -1,0 +1,38 @@
+body{
+    background-color: midnightblue;
+    color: lightcoral;
+}
+
+
+
+.area-border{
+    border: 2px solid white;
+}
+
+.container{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 10vw 1fr 2fr 10vw;
+    grid-template-rows: 10vh 40vh 1fr;
+    gap: 3vh 0px;
+    grid-template-areas: 
+    "nav nav nav nav"
+    ". prof-pic prof-info . "
+    ". posts posts . ";
+}
+
+.nav{
+    grid-area: nav;
+}
+
+.prof-pic{
+    grid-area: prof-pic;
+}
+
+.prof-info{
+    grid-area: prof-info;
+}
+
+.posts{
+    grid-area: posts;
+}
